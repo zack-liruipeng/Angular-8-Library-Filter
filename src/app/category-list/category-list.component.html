@@ -1,0 +1,10 @@
+<button
+  class="fonrm-control btn col-12 text-start"
+  [ngClass]="getButtonStyle(i)"
+  (click)="onClick(i)"
+>
+  {{ categoryName }}
+  <span class="circle" [ngClass]="getCircleStyle(i)">
+    {{ categoryCount }}
+  </span>
+</button>

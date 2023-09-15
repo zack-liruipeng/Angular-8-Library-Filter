@@ -1,0 +1,26 @@
+.circle {
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  margin: 1px;
+}
+
+.circleNotActive {
+  border: 1px solid rgb(109, 109, 109);
+  background-color: rgb(109, 109, 109);
+  color: aliceblue;
+}
+
+.circleActive {
+  border: 1px solid #0d6efd;
+  background-color: rgb(255, 255, 255);
+  color: #0d6efd;
+}
+/*
+Author: Ruipeng Li
+Above function is used for roundCircle markup
+*/

@@ -1,0 +1,22 @@
+<p class="h5">Categorires</p>
+<div class="mb-2">
+  <input
+    type="search"
+    class="form-control"
+    placeholder="Search applets"
+    #filter
+    (input)="filterResults(filter.value)"
+  />
+</div>
+
+<cdk-virtual-scroll-viewport [itemSize]="12" style="height: 800px;">
+  <app-category-list
+    (selectedIndex)="getIndex($event)"
+    *cdkVirtualFor="let category of filteredList; index as i"
+    [categoryName]="category.categoryName"
+    [categoryCount]="category.appletList.length"
+    [selected]="selected"
+    [i]="i"
+  >
+  </app-category-list>
+</cdk-virtual-scroll-viewport>
